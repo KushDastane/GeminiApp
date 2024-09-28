@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:text="GEMINI AI WORD COUNTER"
+            android:textColor="#BF87CA"
+            android:textStyle="bold"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="44dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter some text"
+            android:inputType="textMultiLine"
+            android:minHeight="60dp"
+            android:padding="16dp"
+            android:textColorHint="#999696"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:minHeight="60dp"
+            android:padding="16dp"
+            android:text="Submit"
+            android:textColor="#03035F"
+            android:textSize="30sp"
+            app:iconSize="18dp"
+            app:rippleColor="#9C27B0"
+            app:strokeColor="#F8F4F4" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Results will be displayed here"
+            android:textColor="#A87FC1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:minHeight="60dp"
+            android:padding="16dp"
+            android:text="Clear"
+            android:textColor="#05053E"
+            android:textSize="30sp"
+            app:rippleColor="#9C27B0"
+            app:strokeColor="#FAF7F7" />
+
+    </LinearLayout>
+</ScrollView>
